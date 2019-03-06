@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- //JQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Normal CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header">Crystal Collector!</div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 randomNumberColumn">
+                <p id="randomStartingNumber">Click Here To Start</p>
+            </div>
+            <div class="col-md-5 offset-md-2 winsLossesColumn">
+                <p id="wins">Wins:</p>
+                <p id="losses">Losses:</p>
+            </div>
+        </div>
+        <div class="row imageRow">
+            <div class="col-md-3 crystal-image"><img id="crystal1" src="assets/images/crystal1.jpg"></div>
+            <div class="col-md-3 crystal-image"><img id="crystal2" src="assets/images/crystal2.jpg"></div>
+            <div class="col-md-3 crystal-image"><img id="crystal3" src="assets/images/crystal3.jpg"></div>
+            <div class="col-md-3 crystal-image"><img id="crystal4" src="assets/images/crystal4.jpg"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 totalScoreIsColumn">Your total score is:</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 totalScoreColumn">
+                <p id="totalScoreDisplay">0</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Alex Zimmerman" content="YOUR_NAME">
+    <meta name="subject" content="HTML WEBPAGE TITLE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indiana Jones RPG Game</title>
+
+    <!-- ALL CSS IN THE META HEAD SECTION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"
+        integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="IndianaJonesRPGAssets/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Assistant|Bangers|Cabin+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div id="logodiv"><img src="IndianaJonesRPGAssets/images/templeOfDoomLogo.png" class="logo"></div>
+            <h1>Fight the Mola Ram</h1>
+        </div>
+        <div class="container-fluid">
+            <!--Rules Start-->
+            <div class="row" id="rulediv">
+                <div class="col-sm-9">
+                    <h2 id="titleRules">Instructions</h2>
+                    <p id="rules">
+                        Welcome back to 1984 fellow adventurers! The evil Mola Ram will use his black magic to give you
+                        a
+                        totally random number at the beginning of
+                        each round.
+                        <br>
+                        Each time you click on one of the good characters, a specific amount of points will be
+                        added to your total score.
+                        <br>
+                        You can beat Mola Ram by matching your total score to his number. You will lose the game if your
+                        total score goes above
+                        Mola Ram's number.
+                        <br>
+                        The value of each of the good characters is hidden from you until you click on one of
+                        them.
+                        <br>
+                        Each time the game starts, the values of each good character will change.
+                        <br>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="IndianaJonesRPGAssets/images/molaRam.jpg" id="shredder">
+                </div>
+            </div>
+            <!--Rules End-->
+        </div>
+        <!--Row 1: Title, Game Logo, Rules End-->
+
+        <div>
+            <div class="container-fluid">
+                <div class="row" id="images1">
+                    <div class="col-sm-6">
+                        <img src="IndianaJonesRPGAssets/images/indianaJones.jpg" class="crystalimg" id="one">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="IndianaJonesRPGAssets/images/youngSidekick.jpg" class="crystalimg" id="two">
+                    </div>
+                </div>
+                <div class="row" id="images2">
+                    <div class="col-sm-6">
+                        <img src="IndianaJonesRPGAssets/images/willieScott.jpg" class="crystalimg" id="three">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="IndianaJonesRPGAssets/images/shaman.jpg" class="crystalimg" id="four">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="panelStyle">
+            <div class="row panel-body">
+                <div class="col-sm-6">
+                    Number to match:
+                    <span id="number"></span>
+                </div>
+                <div class="col-sm-6">
+                    Your number:
+                    <span id="combined"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="panelStyle">
+            <div class="row panel-body">
+                <div class="col-sm-6">
+                    Wins:
+                    <span id="numberWins"></span>
+                </div>
+                <div class="col-sm-6">
+                    Losses:
+                    <span id="numberLosses"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row panel-body">
+                <div class="col-sm-12" id="audioControl">
+                    <audio id="myAudio" controls autoplay="false"
+                        src="IndianaJonesRPGAssets/images/templeofDoomSongmp3.mp3" autostart="false"
+                        loop="true"></audio>
+                </div>
+            </div>
+        </div>
+        <!-- <audio id="myAudio" src="IndianaJonesRPGAssets/images/templeOfDoomSongmp3.mp3"></audio> -->
+    </div>
+    <!--Main Container End-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="IndianaJonesRPGAssets/javascript/game1.js"></script>
+</body>
+
+</html>
